@@ -1,0 +1,35 @@
+In lib folder:
+
+asm-3.3
+asm-commons-3.3
+asm-tree-3.3
+classes12
+commons-fileupload-1.2.2
+commons-io-2.0.1
+commons-lang-2.5
+freemarker-2.3.18
+hibernate-entitymanager
+javaee
+javassist-3.11.0.GA
+jboss-faces
+jsf-api
+jsf-impl
+jstl
+ognl
+servlet
+servlet-api
+standard
+struts2-core-2.3.1.1
+toplink-essentials
+toplink-essentials-agent
+xwork-core-2.3.1.1
+
+----------------------
+
+in Build path:
+
+All the above +
+
+junit-4.1
+junit-4.1-src
+log4j-1.2.15

@@ -1,0 +1,17 @@
+create table prescriptionDetails(
+detailsId varchar2(10) constraint dId_pk primary key,
+medicineName varchar2(20) not null,
+morning varchar2(5) not null,
+noon varchar2(5) not null,
+night varchar2(5) not null,
+timesPerDay number,
+dose number not null);
+
+-------------------------
+
+insert into prescriptionDetails values('&detailsId','&medicineName','&morning',
+'&noon','&night',&dose);
+
+-------------------------
+
+

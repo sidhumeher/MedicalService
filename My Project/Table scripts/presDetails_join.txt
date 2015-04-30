@@ -1,0 +1,6 @@
+create table presDetails_join(
+prescriptionId varchar2(10) constraint presdID_fk references prescription(prescriptionId),
+detailsId varchar2(10) constraint detailsId_fk references prescriptionDetails(detailsId));
+
+-------------------
+

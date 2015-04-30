@@ -1,0 +1,4 @@
+create table issueBooking(
+issueId number constraint iID_pk primary key,
+issueText varchar2(200),
+status varchar2(10));

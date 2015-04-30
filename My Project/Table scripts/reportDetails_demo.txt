@@ -1,0 +1,4 @@
+create table reportDetailsdemo(
+reportId number constraint rept_Id_pk primary key,
+patientId number not null,
+reportFile varchar2(100) not null);

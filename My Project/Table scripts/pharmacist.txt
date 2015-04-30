@@ -1,0 +1,15 @@
+create table pharmacist(
+userId varchar2(20) constraint uId_pk primary key,
+password varchar2(20) not null);
+
+----------------------
+
+insert into pharmacist values('&userId','&password');
+
+----------------------
+
+USERID               PASSWORD
+-------------------- --------------------
+ipharma1             infosys
+ipharma2             infosys
+

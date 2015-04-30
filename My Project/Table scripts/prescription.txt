@@ -1,0 +1,20 @@
+create table prescription(
+patientName varchar2(30) constraint patName_pk primary key,
+doctorName varchar2(30) not null,
+medicineName varchar2(30) not null,
+timesPerDay number not null,
+dose varchar2(20) not null);
+
+---------------------------------
+
+insert into prescription values('&patientName','&doctorName','&medicineName',&timesPerDay,'&dose');
+
+---------------------------------
+
+
+PATIENTNAME                    DOCTORNAME
+------------------------------ ------------------
+MEDICINENAME                   TIMESPERDAY DOSE
+------------------------------ ----------- ------
+ramu                           Ravi
+coldact                                  2 10MG

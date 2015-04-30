@@ -1,0 +1,18 @@
+create table medicineDetails(
+medicineId varchar2(10) constraint medId_pk primary key,
+medicineName varchar2(20),
+quantity number,
+price number);
+
+-----------------------
+
+insert into medicineDetails values('&medicineId','&medicineName',&quantity,&price);
+
+-----------------------
+
+MEDICINEID MEDICINENAME           QUANTITY      PRICE
+---------- -------------------- ---------- ----------
+m101       coldact                     100         20
+m102       disprin                      50         30
+m103       ciproflozin                  50         20
+m104       megaclox                   1000         30

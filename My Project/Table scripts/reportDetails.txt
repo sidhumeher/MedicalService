@@ -1,0 +1,13 @@
+create table reportDetails(
+reportId varchar2(30) constraint rep_Id_pk primary key,
+labAssistantId varchar2(30),
+patientId varchar2(30) not null,
+reportFile varchar2(100) not null,
+reportType varchar2(20) not null,
+uploadedDate date not null);
+
+-------------------------------
+
+insert into reportDetails values('&reportId','&patientId','&reportFile');
+
+-------------------------------

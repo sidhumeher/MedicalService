@@ -1,0 +1,16 @@
+create table labAsst(
+userId varchar2(20) constraint userId_pk  primary key,
+password varchar2(20) not null,
+labName varchar2(10) not null);
+
+-----------------------------
+
+insert into labAsst values('&userId','&password','&labName');
+
+-----------------------------
+
+USERID               PASSWORD             LABNAME
+-------------------- -------------------- -------
+infy1                infosys              Lab1
+infy2                infosys              Lab2
+infy3                infosys              Lab3

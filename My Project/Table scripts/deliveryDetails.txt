@@ -1,0 +1,23 @@
+create table deliveryDetails(
+patientId varchar2(30) constraint patientid_pk primary key,
+prescriptionId number not null,
+medsRequired varchar2(10) not null,
+deliveryId number not null,
+deliveryStatus varchar2(30) not null,
+amount number not null,
+location varchar2(20) not null);
+
+------------------------
+
+insert into deliveryDetails values('&patientId',&prescriptionId,'&medsRequired',&deliveryId,'&deliveryStatus',&amount,'&location');
+
+------------------------
+
+PATIENTID                      PRESCRIPTIONID MEDSREQUIR DELIVERYID
+------------------------------ -------------- ---------- ----------
+DELIVERYSTATUS                     AMOUNT LOCATION
+------------------------------ ---------- --------------------
+pat1                                     2001 true             5001
+Undelivered                          1000 Mysore
+
+pat2                                     2002 true             5002

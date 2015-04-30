@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<include file="struts-default.xml" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="false" />
+
+	<package name="default" extends="struts-default">
+
+		<action name="labAsstAction" class="com.infy.action.labAsstAction">
+			<result name="success">labAsst_success.jsp</result>
+			<result name="error">error.jsp</result>
+			<result name="input">labAsst_login.jsp</result>
+		</action>
+
+		<action name="pharmacistAction" class="com.infy.action.pharmacistAction">
+			<result name="success">pharmacist_success.jsp</result>
+			<result name="error">error.jsp</result>
+			<result name="input">pharmacist_login.jsp</result>
+		</action>
+
+		<action name="medsAvailabilityAction" class="com.infy.action.medsAvailabilityAction"
+			method="execute">
+			<result name="success">medsAvailable.jsp </result>
+			<result name="error"> error.jsp</result>
+		</action>
+
+		<action name="prescriptionDetailsAction" class="com.infy.action.prescriptionDetailsAction"
+			method="execute">
+			<result name="success">prescriptionDetails.jsp </result>
+			<result name="error"> error.jsp</result>
+		</action>
+
+		<action name="medsDeliveryAction" class="com.infy.action.medsDeliveryAction"
+			method="execute">
+			<result name="success">medsDelivery.jsp </result>
+			<result name="error"> error.jsp</result>
+		</action>
+
+		<action name="issueBookAction" class="com.infy.action.issueBookAction"
+			method="execute">
+			<result name="success">issueBooking_success.jsp </result>
+			<result name="error"> error.jsp</result>
+		</action>
+
+		<action name="checkIssueAction" class="com.infy.action.checkIssueAction"
+			method="execute">
+			<result name="success">checkIssue.jsp </result>
+			<result name="error"> error.jsp</result>
+		</action>
+
+		<action name="uploadReportAction" class="com.infy.action.uploadReportAction"
+			method="execute">
+			<result name="success">labAsst_success.jsp </result>
+			<result name="error">error.jsp</result>
+			<result name="input">labAsst_success.jsp</result>
+		</action>
+
+		<action name="reportDisplayAction" class="com.infy.action.reportDisplayAction"
+			method="execute">
+			<result name="success">labReport.jsp </result>
+			<result name="error"> error.jsp</result>
+		</action>
+
+		<action name="reportDetailsdemoAction" class="com.infy.demo.reportDetailsdemoAction"
+			method="execute">
+			<result name="success">labAsstSuccess_demo.jsp </result>
+			<result name="error">error.jsp</result>
+			<result name="input">labAsstSuccess_demo.jsp </result>
+		</action>
+
+		<action name="reportDisplayAction_demo" class="com.infy.demo.reportDisplayAction_demo"
+			method="execute">
+			<result name="success">labReport_demo.jsp </result>
+			<result name="error"> error.jsp</result>
+		</action>
+
+		<action name="defaultpage">
+			<result>
+			</result>
+		</action>
+
+	</package>
+
+</struts>
